@@ -1,6 +1,6 @@
 # docker-helm-kubectl
 
-Alpine Docker image with helm, kubectl, and CLI goodies like jq, and yq.
+Alpine [Docker image](https://hub.docker.com/r/r6by/docker-helm-kubectl/) with helm, kubectl, and CLI goodies like jq, and yq.
 
 Note this is nearly the same as [Codefresh Helm Plugin](https://github.com/codefresh-io/cf-plugin-helm), except without the `release_chart` script, and with the additional benefit of getting Helm values in JSON format for custom scripting.
 
