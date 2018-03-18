@@ -7,7 +7,7 @@ RUN apk --no-cache add git \
     && cp /go/bin/yq /tmp
 
 FROM alpine:3.7
-RUN apk add --no-cache curl ca-certificates jq
+RUN apk add --no-cache curl ca-certificates jq pv
 COPY --from=helm /bin/helm /usr/bin/
 COPY --from=helm /usr/local/bin/kubectl /usr/bin/
 COPY --from=goget /tmp/yq /usr/bin/
